@@ -1,0 +1,222 @@
+html * {
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+
+
+#landingPage {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.navContainer {
+        /* margin-top: 1%; */
+       
+        box-shadow: 0px 3px 5px 1px black;
+        background-image: url(images/brushSteel.jpg);
+        
+}
+
+
+
+
+
+.navContainer h1 {
+    font-family: 'Saira', sans-serif;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 300;
+    font-size: 2.5rem;
+    padding:5px 15px 10px 15px;
+    text-align: center;
+
+    line-height: 1;
+    background: rgba(0,0,0,.6);
+    box-shadow: 0px 1px 1px 2px black;
+    transition: color 800ms;
+}
+
+.navContainer h1:hover {
+    color: rgba(218, 42, 42, 0.8);
+    transition: color 800ms;
+}
+
+
+.landingNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+
+.landingNav a {
+    /* text-decoration: none; */
+    color: rgba(0, 0, 0, 0.8);
+    font-family: 'Saira', sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.landingNav a:hover {
+    color: rgba(19, 12, 224, 0.8);
+    /* text-shadow: 29px 21px 16px rgba(0,0,0,0); */
+}
+
+#blank {
+    height:20px;
+    width: 40px;
+    background: none;
+}
+
+#info {
+    
+    display: none;
+    background-image: url(images/brushSteel.jpg);
+    margin-left: 60px;
+    box-shadow: 0px 3px 3px 2px black;
+    
+}
+
+#info h2 {
+    font-family: 'Saira', sans-serif;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 300;
+    font-size: 2.5rem;
+    padding:5px 15px 10px 15px;
+    text-align: center;
+    line-height: 1;
+    background: rgba(0,0,0,.6);
+    box-shadow: 0px 1px 2px 1px black;
+}
+
+#info h2:hover {
+    color: rgba(218, 42, 42, 0.8);
+    transition: color 800ms;
+}
+
+#info h3 {
+    color: rgba(0, 0, 0, 0.8);
+    font-family: 'Saira', sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+#info h3:hover {
+    color: rgba(24, 22, 97, 0.863);
+}
+
+#info div {
+    position: relative;
+    text-align: right;
+    padding-right: 10px;
+    color: rgba(218, 42, 42, 0.8);
+    box-shadow: 0px 1px 1px 1px black;
+    font-family: 'Saira', sans-serif;
+    font-weight: 500;
+    background: rgba(0,0,0,.8);
+}
+
+#info div:hover {
+    cursor: pointer;
+}
+
+@media screen and (min-width: 751px) {
+    .phil {
+        display: block;
+    }
+    .philSmall {
+        display: none;
+    }
+}
+
+.phil {
+    width: 450px;
+    height: 250px;
+    text-align: left;
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 200;
+    font-style: italic;
+    color: rgba(244, 242, 255, 0.8);
+    font-size: 1.8rem;
+    line-height: 125%; 
+    background-color: rgba(0, 0, 0, 0.767);
+    border: solid black 2px;
+    padding: 10px 20px 0 20px;
+    position: absolute;
+    left: 600px;
+    bottom: 225px;
+}
+
+.phil span {
+    position: absolute;
+    right: 0;
+    text-align: right;
+    padding-right: 20px;
+    /* margin-left: 130px; */
+}
+
+
+@media screen and (max-width: 750px) {
+    .phil {
+        display:none;
+    }
+    
+    .philSmall {
+        display: block;
+        box-sizing: border-box;
+        width: 94%;
+        height: fit-content;
+        color: rgba(244, 242, 255, 0.8);
+        background-color: rgba(0, 0, 0, 0.767);
+        font-family: 'Libre Franklin', sans-serif;
+        line-height: 150%;
+        font-weight: 400;
+        font-size: 1.1rem;
+        position: absolute;
+        left: 3vw;
+        top: 135px;
+        padding: 5px;
+        margin: 0;
+        border: solid black 2px;
+        text-align: center;
+        max-width: 380px;
+    }
+    
+}
+
+ #landingBackground {
+    background-image: url("images/1080gooseflip.jpg");
+    background-attachment: fixed;
+    background-position: bottom left;  
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    z-index: -1;
+} 
+
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.74);
+    color: rgba(184, 184, 184, 0.829);
+    text-align: center;
+}
+
+.strike {
+    text-decoration: line-through;
+}
