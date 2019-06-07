@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Orbitron:400,500,700,900"
+      rel="stylesheet"
+    />
+    
+
+    <link rel="stylesheet" href="weight.css" />
+    <title>Measurement Converter</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="formText">
+        <input
+          id="unitQuantity"
+          class="inputStyle"
+          autocomplete="off"
+          type="text"
+          placeholder="Decimal Quantity"
+          oninput="reset()"
+        />
+
+        <select required id="unitDropdown" class="inputStyle" onchange="reset()">
+          <option value="" disabled selected hidden>Volume Unit</option>
+        </select>
+
+        <select required id="ingredientDropdown" class="inputStyle" onchange="reset()">
+          <option value="" disabled selected hidden>Ingredient</option>
+        </select>
+
+        <button class="inputStyle" onclick="calcGrams()">Weigh It</button>
+      </div>
+      <div class="imgCapsule">
+        <div class="lcdBlock">
+          <p id="totalWeight"></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="weight.js"></script>
+  </body>
+</html>
