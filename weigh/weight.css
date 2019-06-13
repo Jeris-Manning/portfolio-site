@@ -184,7 +184,7 @@ body {
 .container {
   display: flex;
   max-width: 600px;
-  min-width: 535px;
+  /* min-width: 535px; */
   justify-content: space-around;
   margin: 60px auto 0;
   padding: 20px 5px;
